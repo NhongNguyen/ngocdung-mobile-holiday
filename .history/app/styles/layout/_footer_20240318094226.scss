@@ -1,0 +1,99 @@
+.footer .container{
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:100;
+  transform: translateY(710%);
+  z-index: 14;
+  color:$third-color;
+  z-index: 15;
+}
+.footer-logo{
+  padding: 10px 125px;
+}
+.footer-text{
+
+  &-time{
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &-link{
+    color: $fourth-color;
+    font-weight: bold;
+    font-size:15px;
+  }
+  &-hotline{
+    margin-top:15px;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  &-number{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.1px;
+    margin-top:-10px;
+    margin-bottom: 5px;
+  }
+}
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  margin-bottom:20px;
+  &-item{
+    width: 30px;
+    height:30px;
+  }
+  &-item:not(:last-child){
+    margin-right:10px;
+  }
+}
+.footer-text-datlich{
+  font-size: 21px;
+}
+.footer-text-app{
+  font-size: 21px;
+  font-weight: bold;
+}
+.footer-download{
+  display: flex;
+  justify-content: center;
+  margin:25px 0px;
+  &-ios{
+    width:155px;
+    height: 52px;
+    margin-right:15px
+  }
+  &-android{
+    width:155px;
+    height: 52px;
+  }
+}
+.footer-address{
+  font-size: 12px;
+}
+@include maxWidth6(){
+  .footer .container{
+    transform: translateY(710%);
+  }
+}
+@include maxWidth4(){
+  .footer .container{
+    transform: translateY(685%);
+  }
+}
+@include maxWidth3(){
+  .footer .container{
+    transform: translateY(710%);
+  }
+}
+@include maxWidth2(){
+  .footer .container{
+    transform: translateY(710%);
+  }
+}
+@include maxWidth1(){
+  .datlich .container{
+    transform: translateY(2.1%);
+  }
+}

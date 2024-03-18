@@ -1,0 +1,96 @@
+.header .container{
+  height: 910px;
+  background: url("../images/background/background-1.png")no-repeat;
+  background-size: 420px;
+  position: relative;
+}
+.header-list-btn{
+  padding:calc(400px + 20px) 45px 0px;
+}
+.header-text{
+  margin-bottom:20px;
+}
+.list-item-btn:not(:last-child){
+  margin-bottom: 8px;
+}
+.item-btn-text {
+  border: none;
+  border-radius: 40px;
+  width: 330px;
+  height:40px;
+  font-size:12px;
+  padding: 0px 20px;
+  font-style: italic;
+  color: $primary-color;
+  background-color: $background-color-btn;
+  font-weight: bold;
+}
+::placeholder {
+  color: $primary-color;
+}
+.item-btn-submit{
+  border: 1px solid #fff;
+  border-radius:40px;
+  padding:10px 45px;
+  width:330px;
+  font-size: 12px;
+  color: $third-color;
+  background-color: $background-color-btn-datlich;
+  display: block; /* Chuyển button thành block element */
+  margin: 0 auto; /* Tự động canh giữa theo chiều ngang */
+  font-weight: bold;
+}
+.header-time{
+  display: flex;
+  justify-content: center;
+  .header-list{
+    display: flex;
+    align-items: center;
+    .header-btn{
+      background-color: #5568c3;
+      border-radius: 10px;
+      padding:8px 15px; 
+    }
+    .header-text{
+      color:$third-color;
+      font-weight: bold;
+      
+    }
+  }
+}
+@include maxWidth(424px){
+  .header .container{
+    height: 800px;
+    background-size: 380px;
+  }
+  .header-list-btn{
+    padding:460px 20px 0px;
+  }
+  .list-item-btn:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .item-btn-submit{
+    margin-top: 20px;
+  }
+}
+@include maxWidth(374px){
+  .header .container{
+    height: 700px;
+    background-size: 320px;
+  }
+  .header-list-btn{
+    padding:400px 20px 0px;
+  }
+  .list-item-btn:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .item-btn-text {
+    border: none;
+    border-radius: 40px;
+    width: 280px;
+    height:35px;
+  }
+  .item-btn-submit{
+    margin-top: 20px;
+  }
+}
